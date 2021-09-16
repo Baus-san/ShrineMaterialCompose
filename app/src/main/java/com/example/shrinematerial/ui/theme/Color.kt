@@ -13,5 +13,14 @@ val ShrinePink100 = Color(0xFFFEDBD0)
 val ShrinePink700 = Color(0xFFF0CAC0)
 // Secondary Color
 val ShrinePink50 = Color(0xFFFEEAE6)
+// Background color
+val ShrineWhiteBg = Color(0xFFFFFBFA)
 // Typography & Iconography
 val DarkShrinePink900 = Color(0xFF442C2E)
+
+// Brands
+val sixBrandColor = Color(0xFFFFDBCF)
+val alpiBrandColor = Color(0xFF73CEF7)
+val malBrandColor = Color(0xFF852EF6)
+val squiggleBrandColor = Color(0xFFE5DEED)
+val lmbBrandColor = Color(0xFF292929)
