@@ -28,7 +28,6 @@ fun HomeScreen() {
         Column {
             ShrineBottomSheet()
             ShrineMiddleSheet()
-            ShrineTopSheet()
         }
     }
 }
@@ -148,6 +147,7 @@ fun HorizontalGridSection(retails: List<Retail> = RetailItems) {
                 tint = DarkShrinePink900,
             )
         }
+        ShrineTopSheet(modifier = Modifier.align(Alignment.BottomEnd))
     }
 }
 
@@ -201,8 +201,28 @@ private fun RetailText(modifier: Modifier = Modifier, text: String, style: TextS
 }
 
 @Composable
-fun ShrineTopSheet() {
-
+fun ShrineTopSheet(modifier: Modifier = Modifier) {
+    Surface(
+        modifier = modifier,
+        elevation = 18.dp,
+        shape = CutCornerShape(topStart = 24.dp),
+        ) {
+        Box(
+            modifier = modifier
+                .background(ShrinePink50)
+                .width(72.dp)
+                .size(56.dp)
+                .clickable { },
+            contentAlignment = Alignment.Center
+        ) {
+            Icon(
+                painter = painterResource(id = R.drawable.ic_baseline_shopping_cart_24),
+                contentDescription = "Shopping Cart",
+                tint = DarkShrinePink900,
+                modifier = Modifier.size(24.dp)
+            )
+        }
+    }
 }
 
 @Preview
