@@ -73,14 +73,14 @@ private fun ShrineBottomSheet() {
 
 @Composable
 fun ShrineMiddleSheet() {
-    Column(
-        modifier = Modifier
-            .clip(CutCornerShape(topStart = 36.dp))
-            .background(ShrineWhiteBg)
-            .fillMaxSize()
-            .padding(16.dp)
-    ) {
-        HorizontalGridSection()
+    Surface(elevation = 16.dp, shape = MaterialTheme.shapes.large) {
+        Column(
+            modifier = Modifier
+                .background(ShrineWhiteBg)
+                .fillMaxWidth()
+        ) {
+            HorizontalGridSection()
+        }
     }
 }
 
